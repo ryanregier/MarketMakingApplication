@@ -6,8 +6,9 @@ class Market:
     buy, sell = [], []
     high, low = None, None
 
-    def __init__(self, name, ticker, price, quantity, type_asset, asset_class, tradable, bid, ask):
+    def __init__(self, name, exchange, ticker, price, quantity, type_asset, asset_class, tradable, bid, ask):
         self.name = name
+        self.exchange = exchange
         self.ticker = ticker
         self.price = price
         self.quantity = quantity
